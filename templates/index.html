@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliment Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            text-align: center;
+            padding-top: 60px;
+        }
+        .box {
+            background: white;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        input, select, button {
+            display: block;
+            width: 90%;
+            margin: 15px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background: #6c63ff;
+            colour: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #5548d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>✨ Compliment Generator ✨</h1>
+        <form action="/compliment" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <select name="mood" required>
+                <option value="">Choose your mood</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="tired">Tired</option>
+                <option value="excited">Excited</option>
+            </select>
+
+            <button type="submit">Give Me a Compliment</button>
+        </form>
+    </div>
+</body>
+</html>
