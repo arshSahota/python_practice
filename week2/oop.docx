@@ -1,0 +1,9 @@
+1) What OOP actually is
+Object-Oriented Programming (OOP) is a way of organising code around objects.
+A class is a blueprint, and an object is an instance created from that blueprint. Python’s official tutorial says classes bundle data and functionality together, and class instances can have attributes (data/state) and methods (behaviour). Python also supports core OOP features like inheritance and method overriding. [docs.python.org], [realpython.com], [geeksforgeeks.org]
+Real-life analogy
+
+Class = blueprint for a car
+Object = your actual car
+Attributes = colour, speed, brand
+Methods = start(), stop(), brake()
