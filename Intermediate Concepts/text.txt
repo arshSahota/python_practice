@@ -1,0 +1,20 @@
+Data structures deeply
+
+sets, dicts, comprehensions
+
+
+
+Functions mastery
+
+lambda, map, filter
+
+
+Modules + project structure
+
+multiple files, imports
+
+
+
+APIs or small project
+
+real-world programming

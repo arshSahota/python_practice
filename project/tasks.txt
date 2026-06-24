@@ -1,0 +1,9 @@
+[ ] Laundry
+[ ] Study
+[x] Python
+[ ] JS
+[ ] Presentation
+[ ] laundry
+[x] python
+[ ] washroom
+[x] Laundry

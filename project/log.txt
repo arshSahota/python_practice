@@ -1,0 +1,9 @@
+<function add_task at 0x000001C22B00C860>
+Task added: laundry
+Task added: python
+Task added: washroom
+Task completed: python
+Function add_task started
+Function add_task ended
+Function mark_done started
+Function mark_done ended
