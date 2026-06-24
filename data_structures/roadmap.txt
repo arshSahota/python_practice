@@ -1,0 +1,11 @@
+1. Lists (deep)
+2. Sets (VERY important)
+3. Dictionaries (core skill)
+4. Comprehensions (powerful)
+
+#choosing the right structure
+
+order matters ==> Lists
+remove duplicates ==> Sets
+label values ==> Dictionaries
+

@@ -1,0 +1,28 @@
+#key value pairs
+#fast lookups
+
+# student = {
+#     "name": "Arshdeep",
+#     "age": 26
+# }
+
+# print(student)
+# print(student["name"])
+
+# for key, value in student.items():
+#     print(f"{key}:{value}")
+
+#common operations
+#add 
+# student["grade"] = "A"
+# student["age"] = 23 #update
+# del student["grade"] # delete
+
+# print(student)
+
+person = {"name": "Sam", "age": 25}
+
+person["city"] = "Vancouver"
+
+print(person.get("city"))
+
