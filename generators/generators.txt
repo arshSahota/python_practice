@@ -1,0 +1,4 @@
+a generator produces one value at a time
+
+intead of storing everything like lists, it yields values lazily
+
