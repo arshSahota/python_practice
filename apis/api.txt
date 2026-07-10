@@ -1,0 +1,78 @@
+API -> a way for your program to talk to another program over the internet
+
+Example: Python code -> asks server -> server returns Data
+
+mental Model 
+python -> customer
+API -> restaurant Manager
+server -> kitchen
+
+you ask -> API returns Data
+
+HTTP Methods
+GET - get Data
+POST - create data
+PUT - update data
+delete - delete data
+
+APIs return JSON
+
+{
+    "name": "john",
+    "age": 25
+}
+
+In python
+data = response.json()
+print(data["name"])
+JSON = python dict/list
+
+#handling responses
+
+never trust APIs blindly
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+else:
+    print("Error")
+
+Status codes
+200 - success
+404 - not found
+500 - server Error
+
+Error handling
+try:
+    response = requests.get(url)
+    response.raise_for_status()
+    data = response.json()
+except:
+    print("Error", e)
+
+#this is a production level habit
+
+Query parameters
+
+url = "https://api.example.com/users?age=20"
+
+params = {"age": 20}
+
+requests.get(url, params = params)
+
+headers:
+
+headers = {
+    "Authorization": "Bearer token"
+}
+
+requests
+
+real workflow in API
+
+1. Call API
+2. Get json
+3. Process data
+4.return result / display
+
