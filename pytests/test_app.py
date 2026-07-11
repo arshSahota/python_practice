@@ -9,12 +9,11 @@ from app import (
 @pytest.mark.parametrize(
     "alarms, expected",
     [
-        ([], 0),
-        ([{"severity": "HIGH"}], 1),
-        ([{"severity": "HIGH"}, {"severity": "HIGH"}], 2)
+        (["RTU"], False),
+        (["RTU", "AHU"], False),
+        (["AHU", "RTU", "RTU"], True)
     ]
 )
 
-def test_count_high_alarms(alarms, expected):
-
-    assert count_high_alarms(alarms) == expected
+def test_has_duplicates(alarms, expected):
+    assert has_duplicates(alarms) == expected
