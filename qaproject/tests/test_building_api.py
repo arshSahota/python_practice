@@ -1,28 +1,21 @@
-import pytest
+def test_high_temperature_sensor(building_api):
 
-# def test_valid_sensor_data(valid_sensor_response):
-#     response = valid_sensor_response
-#     assert response["building"] != ""
-#     assert response["temperature"] > 30
-#     assert response["alarm"] is True
-#     assert response["energy_usage"] > 0
+    response = building_api.get_sensor_data()
 
-def test_low_temp_sensor(low_temp_sensor):
-    response = low_temp_sensor
-    assert response["building"] != ""
-    assert response["temperature"] < 18
-    assert response["alarm"] is False
-    assert response["energy_usage"] > 0
+    assert response["status_code"] == 200
 
+    data = response["data"]
 
-"""
-if the response becomes
-{
-    "building": "South Tower",
-    "temperature": 15,
-    "alarm": True,
-    "energy_usage": 700
-}
-i would first investigate
-whether is is an testing issue, application issue or requirements or business rule issue
-"""
+    assert data["temperature"] > 30
+    assert data["alarm"] is True
+
+def test_low_temperature_sensor(building_api):
+
+    response = building_api.get_low_temp_sensor()
+
+    assert response["status_code"] == 200
+
+    data = response["data"]
+
+    assert data["temperature"] < 18
+    assert data["alarm"] is False
