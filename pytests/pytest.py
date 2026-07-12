@@ -18,6 +18,7 @@
         )
     ]
 )
+
 def test_count_high_alarms(alarms, expected):
 
     assert count_high_alarms(alarms) == expected
