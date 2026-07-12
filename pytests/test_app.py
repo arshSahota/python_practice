@@ -9,9 +9,9 @@ from app import (
 @pytest.mark.parametrize(
     "alarms, expected",
     [
-        (["RTU"], False),
-        (["RTU", "AHU"], False),
-        (["AHU", "RTU", "RTU"], True)
+        pytest.param(["RTU"], False, id="empty-list"),
+        pytest.param(["RTU", "AHU"], False, id="one-device"),
+        pytest.param(["AHU", "RTU", "RTU"], True, id = "duplicate-found")
     ]
 )
 
