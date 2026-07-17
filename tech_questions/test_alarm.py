@@ -12,4 +12,13 @@ from alarm import alarm_requires_acknowledgement
 )
 
 def test_alarm_requires_acknowledgement(severity, acknowledged, expected):
-    assert alarm_requires_acknowledgement(severity, acknowledged) == expected
+    assert (
+    alarm_requires_acknowledgement(
+        severity,
+        acknowledged
+    ) == expected
+), (
+    f"Expected {expected} for "
+    f"severity={severity}, "
+    f"acknowledged={acknowledged}"
+)
