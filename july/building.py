@@ -52,3 +52,4 @@ print(validate_rooms(rooms))
 #the occupancy can't be less than 0
 #capacity and occupany limits align or not
 #occupancy can be more than capacity
+#Pytest complete

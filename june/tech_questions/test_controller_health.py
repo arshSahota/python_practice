@@ -1,5 +1,5 @@
 import pytest
-from controller_health import determine_controller_status
+from june.tech_questions.controller_health import determine_controller_status
 
 @pytest.mark.parametrize(
     ("cpu, mem, expectation"),
