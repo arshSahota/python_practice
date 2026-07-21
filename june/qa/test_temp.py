@@ -15,3 +15,6 @@ def test_sensor_has_high_temperature(high_temp_sensor):
 
 def test_sensor_alarm_is_on(high_temp_sensor):
     assert high_temp_sensor["alarm"] == True
+
+#question:
+#ans one place
