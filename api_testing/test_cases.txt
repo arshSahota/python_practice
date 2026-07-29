@@ -1,0 +1,11 @@
+what can go wrong with APIs??
+
+API does not respond
+wrong status code
+missing fields
+invalid data
+wrong content type
+filtering doesn't work
+unauthorized users can access it
+slow response
+
