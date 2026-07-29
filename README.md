@@ -1,4 +1,6 @@
 Python Learning Roadmap
+pytests
+playwright added
 Objective
 Develop a solid intermediate-level foundation in Python within 30 days through structured learning, consistent practice, and project-based application.
 Recommended study time: 1–2 hours per day
