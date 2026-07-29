@@ -1,0 +1,26 @@
+name: Run Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+
+      - name: Install Dependencies
+        run: |
+          pip install pytest
+
+      - name: Run Tests
+        run: |
+          pytest
