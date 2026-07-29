@@ -1,0 +1,13 @@
+why CI/CD exists?
+
+if a developer changes the code
+
+without CI/CD
+nobody notices
+code gets deployed
+production breaks
+
+with CI/CD
+Tests runs automatically
+Deployment stops
+Bug never reaches customers
