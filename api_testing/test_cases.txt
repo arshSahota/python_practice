@@ -9,3 +9,25 @@ filtering doesn't work
 unauthorized users can access it
 slow response
 
+
+common cases:
+200 - OK
+201 - created
+400 - Bad request
+401 - unauthorized
+403 - forbidden
+404 - not found
+500 - internal server error
+
+GET --> READ
+POST --> CREATE
+PUT --> UPDATE
+DELETE --> DELETE
+
+BASIC AUTOMATION:
+Send request
+validate status code
+validate response schema
+validate business rules
+add tests to CI/CD pipeline
+
