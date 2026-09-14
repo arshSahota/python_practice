@@ -1,4 +1,4 @@
-Python Learning Roadmap
+Python Learning 
 pytests
 playwright added
 Objective
